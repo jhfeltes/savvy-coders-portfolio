@@ -6,19 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Hunter Portfolio</title>
 
-    <style>
-        nav {background-color: red;}
-        header {background-color: blue; height: 100px;}
-        section {color: green;}
-        p {text-align: center; width: 550px;}
-        footer {color: hotpink}
-        .apple {background-color: cornflowerblue;}
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 
 </head>
-  <body>
-        <nav>
+  <body class="margin">
+        <nav class="margin">
             <ul>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -32,20 +24,34 @@
                 </li>
             </ul>
         </nav>
-    <Header>
-      <h1>Hunter Portfolio</h1>
+    <Header class="margin">
+      <figure>
+        <img src="C:\Users\Jhfeltes\code\SavvyCoders\Hunterfeltes\images" alt="Some sample image" width="50">
+        <figcaption>This is a butterfly</figcaption>
+      </figure>
+        <h1>Hunter Portfolio</h1>
       <h2>A web developer</h2>
     </Header>
 
-    <main>
+    <main class="margin">
+
       <section>
         <h2>A Section Header</h2>
-        <p>
+        <p id="Viewport">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
           praesentium similique minus eveniet provident quam unde recusandae
           non, dolore tempore cumque deserunt eos eum ea quis iusto laborum
           accusamus vel!
         </p>
+
+        <div>
+        <p>another paragraph</p>
+        <img src="https://picsum.photos/200" alt="random photo">
+        <img src="https://picsum.photos/200" alt="random photo">
+        <img src="https://picsum.photos/200" alt="random photo">
+        <img src="https://picsum.photos/200" alt="random photo">
+          </div>
+
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
           minus laborum ullam nisi et quis impedit iste maiores, minima sint
@@ -103,8 +109,9 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="margin">
         &copy; 2019 Hunter Feltes
     </footer>
   </body>
 </html>
+
