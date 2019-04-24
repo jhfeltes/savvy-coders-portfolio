@@ -4,51 +4,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="styles.css">
+
   <title>Contact Form</title>
 </head>
 <body>
   <h1>Contact me</h1>
-  <form action="">
-    <label for="name">name</label>
-    <input type="text" id="name" name="userName">
+  <form action="#" class="container">
+      <span>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="userName" />
+      </span>
 
-    <label for="user-email">Your email</label>
-    <input type="email" name="userEmail" id="user-email">
+      <span>
+        <label for="user-email">Your Email</label>
+        <input
+          type="email"
+          name="userEmail"
+          id="user-email"
+          placeholder="user@example.com"
+        />
+      </span>
 
-    <label for="user-Phone">Phone</label>
-    <input type="tell" name="userPhone" id="user-Phone">
+      <span>
+        <label for="fone">Your Phone</label>
+        <input type="tel" name="userFone" id="fone" />
+      </span>
 
-    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+      <div class="flex">
+        <label for="msg">Your Message</label>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+      </div>
 
-    <input type="submit" value="Send message">
-    <input type="reset" value="">
+      <div>
+        <p>What's this message about?</p>
 
-    <label>What's this message about?
-        <input type="radio" name="subject" value="professional" checked><span>I'd like to hire you!</span>
-        <input type="radio" name="subject" value="personal"><span>Personal message</span>
-        <input type="radio" name="subject" value="other"><span>Don't know/something else</span>
-      </label>
+        <div>
+          <input
+            type="radio"
+            name="subject"
+            value="professional"
+            id="pro"
+            checked
+          />
+          <label for="pro">I'd like to hire you!</label>
+        </div>
 
-      <input type="checkbox" name="optin" value="trusting"checked>Subscribe me to your newsletter!
-      <input type="checkbox" name="optout" value="skeptical" disabled>Cheeky checkbox...
+        <div>
+          <input type="radio" name="subject" value="personal" id="personal" />
+          <label for="personal">Personal message</label>
+        </div>
+        <div>
+          <input type="radio" name="subject" value="other" />
+          <label>Don't know/something else</label>
+        </div>
+      </div>
+      <div>
+        <input type="checkbox" name="optin" value="trusting" checked />Subscribe
+        me to your newsletter!
+        <input type="checkbox" name="optout" value="skeptical" disabled />Cheeky
+        checkbox...
+      </div>
+      <div>
+        <label for="marketing">How did you hear about me?</label>
+        <select name="marketing" id="marketing">
+          <optgroup label="Online">
+            <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
+            <option value="github">Online Portfolio (GitHub)</option>
+            <option value="search">Search Engine</option>
+            <option value="email">Email</option>
+          </optgroup>
+          <optgroup label="In-Person">
+            <option value="networking">We met at a networking event</option>
+            <option value="referral">Personal referral</option>
+            <option value="random">We met somewhere else</option>
+          </optgroup>
+          <option value="other">Other</option>
+        </select>
+      </div>
 
-      <label for="marketing">How did you hear about me?</label>
-
-    <label for="marketing">How did you hear about me?</label>
-      <select name="marketing">
-        <optgroup label="Online">
-          <option value="social">Social Media (FB, Twitter, LinkedIn)</option>
-          <option value="github">Online Portfolio (GitHub)</option>
-          <option value="search">Search Engine</option>
-          <option value="email">Email</option>
-        </optgroup>
-        <optgroup label="In-Person">
-          <option value="networking">We met at a networking event</>
-          <option value="referral">Personal referral</option>
-          <option value="random">We met somewhere else</option>
-        </optgroup>
-        <option value="other">Other</option>
-  </select>
+      <input type="submit" value="Send Message" />
+      <input type="reset" value="Clear Form" />
     </form>
 </body>
 </html>
