@@ -9,6 +9,10 @@
 
   header {background-color: blue; height: 100px;}
 
+  li {
+    list-style: none;
+  }
+
   .flex {display: flex;}
 
   .flex--column {
@@ -37,9 +41,18 @@
     margin-left: 5px;
   }
 
+  .justify-space-between {
+    justify-content: space-between;
+  }
+
+  a {
+    text-decoration: none;
+  }
   span + span {
     margin-left: 15px
   }
+
+  ul { margin: 0; padding: 0;}
 
   form span + div {
     margin-top: 20px
@@ -54,4 +67,20 @@
   }
   form > div + div {
     margin-top: 10px;
+  }
+
+  /* Navigation */
+  nav {position: sticky;
+  top: 0;}
+
+  nav li {
+    margin: 0 20px;
+    text-transform: uppercase;}
+
+  #dropdown {
+    position: absolute;
+    display: none;}
+
+  li:hover #dropdown {
+    display: block;
   }
