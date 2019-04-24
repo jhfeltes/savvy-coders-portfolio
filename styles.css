@@ -10,6 +10,9 @@
 
   header {background-color: blue; height: 100px;}
   .flex {display: flex;}
+
+  .flex--column {
+    flex-direction: column}
   section {color: green;}
   p {text-align: center; width: 550px;}
   footer {color: hotpink}
@@ -20,6 +23,8 @@
   }
   img:nth-child(even) {border: solid 5px green;}
 
+
+
   /* form */
   input {
     margin-left: 5px;
@@ -27,4 +32,19 @@
 
   span + span {
     margin-left: 15px
+  }
+
+  form span + div {
+    margin-top: 20px
+  }
+
+  textarea {
+    margin-top: 15px
+  }
+
+  form p {
+    margin-bottom: 5px;
+  }
+  form > div + div {
+    margin-top: 10px;
   }
