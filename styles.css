@@ -9,9 +9,24 @@ body {
 }
   h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
   }
 
-  header {background-color: blue; height: 100px;}
+  h2 {
+    text-align: center;
+    }
+
+  .right {
+    float: right;
+    margin: 4px;
+   }
+
+   .left {
+     float: left;
+     margin: 4px;
+   }
+
+  header {background-color: cadetblue; height: 100px;}
 
   li {
     list-style: none;
@@ -25,7 +40,6 @@ body {
 
   .flex--column {
     flex-direction: column}
-
   section {color: green;}
 
   p {text-align: center; width: 550px;}
@@ -36,11 +50,17 @@ body {
 
   #Viewport {background-color: chartreuse; height: 20vh; widows: 50vw;}
 
+  .viewport1 {background-color: lightskyblue;}
+
+  .viewport2 {background-color: lightsalmon}
+
+  .viewport3 {background-color: lightgray}
+
   p ~ img{
     border: solid 3px purple;
   }
 
-  img:nth-child(even) {border: solid 5px green;}
+  img {border: solid 5px red;}
 
 
 
