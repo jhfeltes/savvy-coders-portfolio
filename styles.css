@@ -112,3 +112,50 @@ body {
   li:hover #dropdown {
     display: block;
   }
+
+  @media screen and (min-width: 960px) {
+    .flex--md {
+      display: flex;
+    }
+    .flex--md section + section {
+      margin-left: 15px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    body {
+      /* ESTABLISH A GRID */
+      display: grid;
+
+      grid-template-columns: 12rem auto;
+
+      grid-template-rows: min-content auto auto min-content;
+
+      grid-template-areas:
+        "navigation header"
+        "navigation main"
+        "navigation main"
+        "navigation footer";
+    }
+
+
+  nav {
+    grid-area: navigation;
+    }
+
+  nav > ul {
+    flex-direction: column;
+  }
+
+  header {
+    grid-area: header;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+  }
