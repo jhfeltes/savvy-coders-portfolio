@@ -1,147 +1,201 @@
 body {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  font-size: 24px;
+  padding: 15px;
+}
+
+h1,
+h2,
+p {
+  margin: 5px 0;
+}
+
+h1 {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Select any link that has an attribute 'href' that STARTS WITH 'tel'. */
+a[href^="tel"] {
+  color: yellow;
+}
+
+main {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 15px 25px;
+}
+
+/* Go into <main>. Find ANY child that is an <img>, but only grab the first one that you find. */
+main img:first-of-type {
+  border: inset 3px yellow;
+  border-radius: 50%;
+  box-shadow: 3px 6px 9px rgba(0, 0, 0, 0.25);
+
+  /* Control 'shape' of how text is wrapping. */
+  shape-outside: ellipse();
+}
+
+main > section:first-of-type {
+  border-top: solid 3px rebeccapurple;
+}
+
+/* Limit the width of text for better readability. */
+p {
+  max-width: 768px;
+}
+
+section {
+  margin: 10px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+footer,
+nav {
+  padding: 10px 0;
+}
+
+footer li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#bg-container {
+  background: url("https://www.indiewire.com/wp-content/uploads/2017/03/star-trek-deep-space-nine.jpg")
+    center center no-repeat;
+  background-size: cover;
+}
+
+#header-container {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.fas {
+  margin-right: 3px;
+}
+
+/* Utility classes */
+.align-items-top {
+  align-items: flex-start;
 }
 
 .container {
   margin: 0 auto;
   max-width: 960px;
-  width: 75%;
+  width: 80vw;
 }
-  h1 {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flt-lft {
+  float: left;
+  margin-right: 15px;
+}
+
+.important {
+  color: rebeccapurple;
+  text-transform: uppercase;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+/* Navigation */
+nav {
+  background: white;
+  position: sticky;
+  top: 0;
+}
+
+nav li {
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+
+#dropdown {
+  display: none;
+  position: absolute;
+}
+
+li:hover #dropdown {
+  display: block;
+}
+
+/* Form */
+input {
+  margin-left: 5px;
+}
+
+span + span {
+  margin-left: 15px;
+}
+
+form span + div {
+  margin-top: 15px;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+form p {
+  margin-bottom: 5px;
+}
+
+form > div + div {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 960px) {
+  .flex--md {
+    display: flex;
   }
-
-  h2 {
-    text-align: center;
-    }
-
-  .right {
-    float: right;
-    margin: 4px;
-   }
-
-   .left {
-     float: left;
-     margin: 4px;
-   }
-
-  header {background-color: cadetblue; height: 100px;}
-
-  li {
-    list-style: none;
+  .flex--md section + section {
+    margin-left: 15px;
   }
+}
 
-  .flex {display: flex;}
+@media screen and (min-width: 1200px) {
+  body {
+    /* Establish a grid. */
+    display: grid;
 
-  figure {
-    float: left;
+    /* Set up 2 columns - first is a width of 12rems, the other is decided by the browser. */
+    grid-template-columns: 12rem auto;
+    grid-template-rows: min-content auto auto min-content;
+
+    /* Named areas. */
+    grid-template-areas:
+      "navigation header"
+      "navigation main"
+      "navigation main"
+      "navigation footer";
   }
-
-  .flex--column {
-    flex-direction: column}
-  section {color: green;}
-
-  p {text-align: center; width: 550px;}
-
-  footer {color: hotpink}
-
-  .apple {background-color: cornflowerblue;}
-
-  #Viewport {background-color: chartreuse; height: 20vh; widows: 50vw;}
-
-  .viewport1 {background-color: lightskyblue;}
-
-  .viewport2 {background-color: lightsalmon}
-
-  .viewport3 {background-color: lightgray}
-
-  p ~ img{
-    border: solid 3px purple;
-  }
-
-  img {border: solid 5px red;}
-
-
-
-  /* form */
-  input {
-    margin-left: 5px;
-  }
-
-  .justify-space-between {
-    justify-content: space-between;
-  }
-
-  a {
-    text-decoration: none;
-  }
-  span + span {
-    margin-left: 15px
-  }
-
-  ul { margin: 0; padding: 0;}
-
-  form span + div {
-    margin-top: 20px
-  }
-
-  textarea {
-    margin-top: 15px
-  }
-
-  form p {
-    margin-bottom: 5px;
-  }
-  form > div + div {
-    margin-top: 10px;
-  }
-
-  /* Navigation */
-  nav {position: sticky;
-  top: 0;}
-
-  nav li {
-    margin: 0 20px;
-    text-transform: uppercase;}
-
-  #dropdown {
-    position: absolute;
-    display: none;}
-
-  li:hover #dropdown {
-    display: block;
-  }
-
-  @media screen and (min-width: 960px) {
-    .flex--md {
-      display: flex;
-    }
-    .flex--md section + section {
-      margin-left: 15px;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    body {
-      /* ESTABLISH A GRID */
-      display: grid;
-
-      grid-template-columns: 12rem auto;
-
-      grid-template-rows: min-content auto auto min-content;
-
-      grid-template-areas:
-        "navigation header"
-        "navigation main"
-        "navigation main"
-        "navigation footer";
-    }
-
 
   nav {
     grid-area: navigation;
-    }
+  }
 
   nav > ul {
     flex-direction: column;
@@ -158,4 +212,4 @@ body {
   footer {
     grid-area: footer;
   }
-  }
+}

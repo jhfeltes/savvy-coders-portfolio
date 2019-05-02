@@ -1,14 +1,14 @@
 export default `<div id="bg-container">
       <header class="align-items-top container flex">
         <img
-          src="https://codefinity.tech/img/logo.svg"
+          src="https://images6.alphacoders.com/418/418342.jpg"
           alt="Logo"
           height="100"
           class="flt-lft"
         />
         <div class="flex flex-column">
           <div id="greeting"></div>
-          <h1>Manav Misra's Portfolio</h1>
+          <h1>Hunter Feltes Portfolio</h1>
           <address>
             <a href="tel:16187721796">
               <span class="fas fa-phone"></span>Call me now!
