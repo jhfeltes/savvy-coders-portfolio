@@ -1,26 +1,12 @@
-// Create `prompt` to ask for name
-// 'name' is here as a GLOBAL VARIABLE that 'anyone' in the <script> can freely access and modify.
-let name = prompt('What is your name?');
+import Navigation from './components/Navigation';
+import Contents from '.components/Contents';
+import Footer from '.components/Footer';
 
-// This is a FUNCTION DECLARATION
-// Normally, we can avoid using the same name for a LOCAL parameter as a GLOBAL VARIABLE.
-function checkName(nameStr){
-    if(!nameStr){
-    // IF the name is blank, ask again and be sure to capture/overwrite the value of nameStr
-        nameStr = prompt('Really, what is your name?');
+let initialHTML = document.body.innerHTML;
 
-        // RECURSION - Fxn. calls itself again
-        nameStr = checkName(nameStr);
-    }
-
-    return nameStr;
-}
-
-// FUNCTION EXPRESSION
-// let checkName = function() { // Function code }
-
-// We capture what is RETURNED by checkName and overwrite 'name' with that value;
-name = checkName(name);
-
-// Use `alert` to say hello to the user, using the name they put in
-document.querySelector('h1').textContent = name; // "Hello, " + name
+document.body.innerHTML = `
+  ${Navigatio}
+  ${Content}
+  ${Footer}
+  ${initialHTML}
+  `;
