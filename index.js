@@ -1,11 +1,13 @@
 import Navigation from './components/Navigation';
-import Contents from '.components/Contents';
-import Footer from '.components/Footer';
+import Content from './components/Content';
+import Footer from './components/Footer';
 
+// Use innerHTML property as a GETTER
 let initialHTML = document.body.innerHTML;
 
+// Use innerHTML property as a SETTER
 document.body.innerHTML = `
-  ${Navigatio}
+  ${Navigation}
   ${Content}
   ${Footer}
   ${initialHTML}

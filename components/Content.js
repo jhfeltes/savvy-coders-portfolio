@@ -1,91 +1,106 @@
-export default `</head>
-  <body class="margin">
-
-
-    <Header class="margin">
-        <div id="greeting"></div>
-
-        <h1>Hunter's Portfolio</h1>
-      <h2>A Web Developer</h2>
-    </Header>
-
-    <main class="container">
-      <figure>
-        <img src="https://usercontent2.hubstatic.com/12377099_f520.jpg" width="200">
-        <figcaption>Himura Kenshin</figcaption>
-      </figure>
-      <section>
-        <h2>A Section Header</h2>
-        <p id="Viewport">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-          praesentium similique minus eveniet provident quam unde recusandae
-          non, dolore tempore cumque deserunt eos eum ea quis iusto laborum
-          accusamus vel!
+export default `<div id="bg-container">
+      <header class="align-items-top container flex">
+        <img
+          src="https://codefinity.tech/img/logo.svg"
+          alt="Logo"
+          height="100"
+          class="flt-lft"
+        />
+        <div class="flex flex-column">
+          <div id="greeting"></div>
+          <h1>Manav Misra's Portfolio</h1>
+          <address>
+            <a href="tel:16187721796">
+              <span class="fas fa-phone"></span>Call me now!
+            </a>
+          </address>
+        </div>
+      </header>
+      <main class="container">
+        <img
+          src="./img/sample.jpeg"
+          alt="Some sample image"
+          width="200"
+          class="flt-lft"
+        />
+        <h2 class="important">Heading 2 for Main</h2>
+        <p>
+          <strong class="important">THIS IMPORTANT</strong> Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Ullam officiis illum eius eum
+          beatae voluptatibus, porro recusandae blanditiis repudiandae quaerat
+          quibusdam. Quia, ratione. Blanditiis, mollitia enim. Corporis sit
+          aliquam maiores.
         </p>
-
-        <div>
-        <p class="viewport2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores sit, inventore perferendis obcaecati eligendi pariatur assumenda velit expedita? Tenetur dolore, natus magnam adipisci sed perferendis nostrum. Voluptas, dignissimos tempora?
-        <img src="https://i.kinja-img.com/gawker-media/image/upload/s--3cNgkmd1--/c_scale,f_auto,fl_progressive,q_80,w_800/1248887346777114982.jpg" width="250" class="right">
-        </p>
-         <p class="viewport1">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
-          minus laborum ullam nisi et quis impedit iste maiores, minima sint
-          dolorum nesciunt adipisci sapiente distinctio, nam veritatis voluptas
-          vitae voluptate.
-        </p>
-        <p class="viewport3">
-        <img src="https://gentlemanotoku.files.wordpress.com/2014/07/rurouni-kenshin-reflection_3.jpg" alt="Rurouni holding kagome" width="250" class="left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
-        soluta sed explicabo repellat natus tempore possimus. Illum facilis
-        vel dicta iure placeat et velit eligendi, porro, quam, aspernatur
-        adipisci mollitia!
-        </p>
-      </section>
-
-      <section>
-        <h2>Another Heading</h2>
-        <p class="viewport1">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          id nobis, nostrum sunt error deserunt, quisquam aliquid mollitia
-          recusandae numquam aut quos voluptatum dolores. Voluptatum est
-          repellat corrupti deleniti? Officiis.
-        </p>
-        <p class="viewport2">
-          <img src="https://gematsu.com/wp-content/uploads/2018/11/Jump-Force_11-27-18.jpg" alt="Rurouni" width="250" class="right">
-          Eum veniam velit repudiandae ratione commodi odit itaque impedit
-          veritatis in possimus eveniet, quae ipsa excepturi repellendus
-          voluptas obcaecati ad minus, fugit debitis assumenda inventore sint.
-          Pariatur quis cum quas.
-        </p>
-        <p class="viewport3">
-          Debitis ut, fugiat consequatur deserunt, sequi rem aliquid mollitia
-          odio beatae commodi totam aperiam sunt, ad ipsam? Doloremque autem
-          corrupti repellat molestias reiciendis ex rem error consequuntur.
-          Earum, exercitationem accusamus.
-        </p>
-      </section>
-      <section>
-        <h2>Another Heading</h2>
-        <p class="viewport3">
-          <img src="http://d1vr6n66ssr06c.cloudfront.net/wp-content/uploads/2018/11/Jump-Force-1.jpg" alt="bloody rurouni"  width="250" class="left">
-          Suscipit quisquam, dignissimos fugiat ducimus accusantium nemo
-          quibusdam rerum minus cumque culpa magni odio repudiandae hic est esse
-          ullam consequuntur voluptates? Laudantium dolores excepturi deserunt
-          expedita adipisci neque corporis dolorem.
-        </p>
-        <p class="viewport1">
-
-          A ipsum expedita, voluptatibus culpa in molestias numquam esse
-          deserunt, temporibus, dolorem voluptatem neque? Dolore recusandae quis
-          error esse atque deleniti rem voluptate officiis, voluptas hic? Culpa
-          delectus molestias a!
-          <img src="https://media.eventhubs.com/images/2018/11/27_jumpforce01.jpg" alt="jumping rurouni"  width="250" class="right">
-        </p>
-        <p class="viewport2">
-          Inventore illo maiores neque dolor aspernatur esse magni ex est quidem
-          cumque numquam eaque minima non eum, labore quibusdam aperiam animi
-          quia fugit exercitationem quod iusto! Facilis illo temporibus fugit!
-        </p>
-      </section>
-
-    </main>`;
+        <section>
+          <h2>A Section Header!</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta
+            reprehenderit distinctio est aliquam rem qui saepe quisquam
+            exercitationem corporis, facere ipsum recusandae itaque blanditiis
+            voluptatem ducimus cum, magni ipsa sint.
+          </p>
+          <p>
+            1ST Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Perspiciatis, architecto minus consectetur voluptates sed ullam
+            placeat eaque, facere reiciendis, voluptatibus quae ex voluptatum
+            veniam quos reprehenderit vel. Aspernatur, sunt explicabo.
+          </p>
+          <p>
+            2ND Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+            repellendus molestiae, asperiores sapiente illum ipsa impedit natus
+            saepe vitae, nulla cumque animi quaerat omnis! Quos neque quis
+            exercitationem cum repellendus!
+          </p>
+          <p>
+            3RD Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Aliquam, quaerat? Totam perferendis voluptas ratione dolor hic amet
+            possimus quidem eveniet in, distinctio maxime molestias sunt alias
+            at voluptates aspernatur fugit?
+          </p>
+          <p>this is the 4th</p>
+        </section>
+        <div class="flex--md">
+          <section>
+            <h2>Another Heading!</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
+              eaque harum quia, optio nam nulla? Iusto assumenda accusamus
+              tempore corporis, animi nihil architecto expedita ipsum ducimus
+              cum praesentium natus velit?
+            </p>
+            <p>
+              Earum, distinctio, sed sapiente aliquam hic doloribus nihil
+              expedita, amet natus aliquid laudantium quod sit iusto eos
+              excepturi voluptas sequi vero nesciunt quis commodi rem maxime.
+              Exercitationem dolorem deserunt tenetur.
+            </p>
+            <p>
+              Labore sit laborum nesciunt consectetur debitis ipsam. Vero, ad
+              libero. Consequatur optio sed eaque facere eum nihil ab nisi, ut
+              magnam cum voluptatibus aliquam dolor harum minus nobis earum
+              nesciunt.
+            </p>
+          </section>
+          <section>
+            <h2>Another Heading!</h2>
+            <p>
+              Voluptate nihil impedit eum. Qui mollitia aut, ab soluta assumenda
+              odit nostrum ea eius labore iure laborum! Voluptatum ratione nulla
+              culpa impedit ab, aliquam sint sunt nihil placeat expedita soluta.
+            </p>
+            <p>
+              Minus odit neque facere provident vitae non nemo error suscipit
+              repudiandae soluta esse hic, numquam distinctio. Aliquam est
+              voluptatibus earum animi eaque accusamus quidem ipsum officia,
+              rerum modi! Suscipit, molestias!
+            </p>
+            <p>
+              Natus tempora sint iste ut placeat nostrum hic eaque ullam,
+              temporibus rerum voluptas voluptatem itaque, quam incidunt
+              laboriosam maxime velit aperiam, odit nam deserunt excepturi
+              officia! Iure placeat ratione repellendus?
+            </p>
+          </section>
+        </div>
+      </main>
+    </div>`;
