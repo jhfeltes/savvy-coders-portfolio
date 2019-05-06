@@ -10,7 +10,7 @@ export default `<div id="bg-container">
           <div id="greeting"></div>
           <h1>Hunter Feltes Portfolio</h1>
           <address>
-            <a href="tel:16187721796">
+            <a href="tel:13146300851">
               <span class="fas fa-phone"></span>Call me now!
             </a>
           </address>
