@@ -75,7 +75,7 @@ footer li {
 }
 
 #bg-container {
-  background: url("https://www.indiewire.com/wp-content/uploads/2017/03/star-trek-deep-space-nine.jpg")
+  background: url("https://images2.alphacoders.com/564/thumb-1920-564835.jpg")
     center center no-repeat;
   background-size: cover;
 }
@@ -177,7 +177,7 @@ form > div + div {
 }
 
 @media screen and (min-width: 1200px) {
-  body {
+  #root {
     /* Establish a grid. */
     display: grid;
 
