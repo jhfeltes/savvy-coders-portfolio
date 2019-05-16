@@ -1,2 +1,5 @@
-export default `<h1>About me</h1>
-  <p>GO Blues</p>`;
+
+export default function(){
+    return `<h1>About Me!</h1>
+<p>Go Blues</p>`;
+}
