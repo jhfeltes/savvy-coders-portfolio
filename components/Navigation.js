@@ -2,7 +2,7 @@ function buildNavHTML(stateLinks){
     let linksHTML = '';
 
     stateLinks.forEach((link) => {
-        linksHTML += `<li><a href="">${link}</li>`;
+        linksHTML += `<li><a href="">${link.text}</a></li>`;
     });
 
     return linksHTML;
