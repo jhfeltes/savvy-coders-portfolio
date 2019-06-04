@@ -30,11 +30,15 @@ function render(state){
     router.updatePageLinks();
 }
 
-.get("https://jsonplaceholder.typicode.com/posts")
-.then(response => {
-    //Todo" grab the posts from the data, and iterate over them
-    console.log(response.data)
-});
+axios
+    .get('https://jsonplaceholder.typicode.com/posts')
+    // after call stack is all empty, JS can execute the 'then' to 'unwrap the Promise
+    .then((response) => {
+        // 'response.data is an array of 'post' objects
+        // we need to get this into states.Blog.posts
+        response.data.forEach((post) => states.Blog.posts.push(post));
+        render(states.Home);
+    });
 
 function handleRoutes(params){
     render(states[capitalize(params.path)]);
