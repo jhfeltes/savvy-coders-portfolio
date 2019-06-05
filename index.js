@@ -37,7 +37,11 @@ axios
         // 'response.data is an array of 'post' objects
         // we need to get this into states.Blog.posts
         response.data.forEach((post) => states.Blog.posts.push(post));
-        render(states.Home);
+        // if there was a requested route(eg /blog, /contact etc, then the 'params property will exist.
+        // we will then check if the path inside of that was 'blog'
+        if(router.lastRouteResolved().params && router.lastRouteResolved().params.path === 'blog'){
+            render(states.Blog);
+        }
     });
 
 function handleRoutes(params){
